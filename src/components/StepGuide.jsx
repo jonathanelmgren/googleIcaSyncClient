@@ -24,7 +24,15 @@ export const StepGuide = () => {
 			<div>
 				<h3>Steg 3:</h3>
 				<p>För att denna sidan skall ligga uppe måste både kod och servrar underhållas och bekostas, därför tänkte jag mig ett "Pay what you want"-system. Ni swishar valfri summa till mig så får ni en månad av denna tjänsten :). Glöm ej att skriva ditt ID eller användarnamn i meddelande-fältet. Men glöm inte av att ni får en 7-dagars provperiod.</p>
-                <p>Swish: 0706943349</p>
+				<p>Swish: 0706943349</p>
+				<p>Prisidé:</p>
+				<ul>
+					<li>1-99:- / 1 mån</li>
+					<li>100-199:- / 2 mån</li>
+					<li>200-299:- / 2 mån</li>
+					<li>300-399:- / 3 mån</li>
+					<li>Osv...</li>
+				</ul>
 				<p>Om ni ej vill betala så kan ni även ladda ned källkoden och köra den lokalt hos er:</p>
 				<a href='https://github.com/jonathanelmgren/googleIcaSyncClient'>GitHub - Client </a> <br />
 				<a href='https://github.com/jonathanelmgren/googleIcaSyncServer'>GitHub - Server</a>
