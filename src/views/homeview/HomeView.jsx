@@ -98,6 +98,15 @@ export const HomeView = () => {
 								Senaste sync: {authenticatedUser.latest_sync ? authenticatedUser.latest_sync : 'Never synced'}
 							</Typography>
 							<br />
+							<Typography component='h5' variant='h7'>
+								<bold>Tänk på att du ger nu mig eventuell tillgång till ditt konto, detta skes på egen risk.</bold><br />
+								<bold>
+									<Link to={RoutingPaths.guideView}>OBS! Läs guiden innan du går vidare</Link>
+								</bold><br />
+								<bold>
+									<Link to={RoutingPaths.termsView}>OBS! Genom att använda tjänsten godkänner du våra villkor</Link>
+								</bold>
+							</Typography>
 
 							<Box component='form' onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
 								<TextField margin='normal' required fullWidth id='ica_user' label='ICA Användarnamn (Personnummer)' name='ica_user' autoFocus />
@@ -107,48 +116,6 @@ export const HomeView = () => {
 									Spara
 								</Button>
 							</Box>
-							<br />
-							<br />
-							<Typography component='h4' variant='h4'>
-								Steg 1:
-							</Typography>
-							<Typography component='p' variant='p'>
-								1. Surfa in på <a href='https://shoppinglist.google.com/'>shoppinglist.google.com</a>
-								<br />
-								2. Ta din primära Google Shoppinglist (den inköpslistan som är kopplad till din Google Assistent) och döp om den till: {authenticatedUser._id}
-								<br />
-								3. Dela denna listan med: <span>googleicasync@elmgren.dev</span>
-							</Typography>
-							<br />
-							<Typography component='h4' variant='h4'>
-								Steg 2:
-							</Typography>
-							<Typography component='p' variant='p'>
-								Skriv in ditt användarnamn och lösenord till ICA. Lösenordet till ICA hittar du på tidningen buffé som ICA skickar ut. Du kan också kontakta kundtjänst och be dem skicka ut ett lösenord. Du kan även byta lösenordet själv genom att surfa in på <a href='https://ica.se/'>ICAs hemsida</a>, klicka "Logga in", Välj sedan "Lösenord" och klicka i "Glömt lösenordet".
-								<br />
-								<br />
-								För att verifiera att ditt användarnamn och lösenord är korrekt så kan du bara försöka logga in på ICA med dina uppgifter <br />
-								<br />
-								Skillnaden på automatisk och manuell är att den automatiska sparar dina ICA-uppgifter för att automatiskt uppdatera en så kallad Token (som då används för att göra API-anrop och hämta/lägga till data i din inköpslista hos ICA.). <br />
-								Den manuella hämtar denna så kallade token och sparar ej dina inloggningsuppgifter. Denna token har ett utgångsdatum och du behöver göra om denna processen då och då om du väljer manuell approach.
-							</Typography>
-							<br />
-							<Typography component='h4' variant='h4'>
-								Steg 3:
-							</Typography>
-							<Typography component='p' variant='p'>
-								För att denna sidan skall ligga uppe måste både kod och servrar underhållas och bekostas, därför har jag ett "Pay what you want"-system. Ni swishar valfri summa till mig så får ni en månad av denna tjänsten :). Glöm ej att skriva ditt ID eller användarnamn i meddelande-fältet. Men glöm inte av att ni får en 7-dagars provperiod.
-								<br />
-								<br />
-								Swishnummer: 0706943349
-								<br />
-								<br />
-								Om ni ej vill betala så kan ni även ladda ned källkoden och köra den lokalt hos er:
-								<br />
-								<a href='https://github.com/'>Github - Server</a>
-								<br />
-								<a href='https://github.com/'>Github - Client</a>
-							</Typography>
 						</Box>
 					</Container>
 				</ThemeProvider>

@@ -21,7 +21,7 @@ const theme = createTheme()
 
 export const SignIn = () => {
 	const [, setAuthenticatedUser] = useContext(UserContext)
-  const navigate = useNavigate()
+	const navigate = useNavigate()
 	const handleSubmit = async (event) => {
 		event.preventDefault()
 		const data = new FormData(event.currentTarget)
@@ -40,7 +40,7 @@ export const SignIn = () => {
 			if (res.status !== 200) alert('Something went wrong')
 			setAuthenticatedUser(res.data)
 			if (data.get('remember') === 'checked') localStorage.setItem('token', res.data.token)
-      navigate(RoutingPaths.homeView)
+			navigate(RoutingPaths.homeView)
 		} catch (e) {
 			alert(e.message)
 		}

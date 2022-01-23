@@ -53,6 +53,10 @@
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    display:grid;
+    max-width: 70%;
+    place-items: center;
+    margin:0 auto!important;
   }
   
   /* A elements that don't have a class get default styles */
