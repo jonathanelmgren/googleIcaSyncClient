@@ -78,6 +78,16 @@ export const SignIn = () => {
 								</Link>
 							</Grid>
 						</Grid>
+						<Grid container>
+							<Grid item>
+								<br />
+								<Typography variant='p'>{'Vill du inte skapa konto och hellre köra detta lokalt och kostnadsfritt?:'}</Typography>
+								<br />
+								<a href='https://github.com/jonathanelmgren/googleIcaSyncServer'>https://github.com/jonathanelmgren/googleIcaSyncServer</a>
+								<br />
+								<a href='https://github.com/jonathanelmgren/googleIcaSyncClient'>https://github.com/jonathanelmgren/googleIcaSyncClient</a>
+							</Grid>
+						</Grid>
 					</Box>
 				</Box>
 			</Container>
