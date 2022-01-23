@@ -1,9 +1,9 @@
-import Axios from 'axios';
+import Axios from 'axios'
 
-const API_URL = "http://localhost:3001"
+const API_URL = process.env.API_URL
 
 const API = Axios.create({
-    baseURL: API_URL
+	baseURL: API_URL,
 })
 
 export default API
